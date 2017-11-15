@@ -1,40 +1,58 @@
-body, html {
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  color: #000;
-  background: #a7a09a;
 }
-#wrap {
-  width: 750px;
-  margin: 0 auto;
-  background: #99c;
+div.library {
+  background: #EEE;
+  padding: 5px 25px;
 }
-#header {
-  background:#ddd;
+div.library-masthead {
+  box-shadow: 0 5px 5px -5px #BBB;
+  padding: 11px;
+  margin: -13px 0px 0px;
 }
-#nav {
-  background:#c99;
+div.card-masthead{
+  color: white;
+  padding: 17px;
+  border-radius: 5px 5px 0px 0px;
 }
-#main {
-  float:left;
-  width:500px;
-  background:#9c9;
-}
-#sidebar {
-  background:#c9c;
-  float:right;
-  width:250px;
-}
-#footer {
-  background:#cc9;
-  clear:both;
-}
-.apple {
-  width: 50px;
+div.card {
+  background: white;
+  border-radius: 5px;
   float: left;
+  width: 47%;
+  margin: 10px;
+  min-width: 300px;
 }
-.clearspan {
-  display: block;
+div.bubble {
+  border-radius: 999px;
+  display: inline-block;
+  border: solid #EEE 2px;
+  padding: 7px;
+  text-align: center;
+  min-width: 36px;
+}
+.card-masthead, .card-body {
+  padding: 10px;
+}
+.library:after {
+  content: "";
+  display: table;
   clear: both;
-  color: red;
+}
+.green {
+  background: #259775;
+}
+.pink {
+  background: #f291b0;
+}
+.blue {
+  background: #828ac9;
+}
+div.bubble p {
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 0px 6px;
 }
