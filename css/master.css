@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +34,12 @@ div.bubble {
   text-align: center;
   min-width: 36px;
 }
+.float-right {
+  float: right;
+}
+.cf {
+  clear: both;
+}
 .card-masthead, .card-body {
   padding: 10px;
 }
@@ -52,7 +58,73 @@ div.bubble {
   background: #828ac9;
 }
 div.bubble p {
-    font-size: 13px;
-    font-weight: bolder;
-    padding: 0px 6px;
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 0px 6px;
+}
+.bubble.icon{
+  float: right;
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+
+.card-body {
+    padding: 22px;
+}
+p.course-description {
+    padding: 11px 0px;
+    color: gray;
+}
+h3 {
+    margin: 20px;
+}
+h4 {
+    padding: 11px 0px;
+}
+p.gray-text{
+    color: gray;
+}
+p.jet{
+  color: var(--color-green);
+}
+p.pyro{
+  color: #f291b0;
+}
+p.survival{
+  color: #8189c9;
+}
+p.nav {
+  color: #269775;
+}
+p {
+  color: gray;
+}
+i.fa.fa-play::before {
+  color: gray;
+}
+i.fa.fa-star::before {
+  color: gray;
+}
+i.fa.fa-rocket{
+  transform: rotate(45deg);
+  margin: 0 8px 0;
+  top: -6px;
+  position: relative;
+}
+:root {
+  --color-green: #259775;
+}
+i.fa.fa-fighter-jet {
+    font-size: 40px;
+}
+.user-icons.float-right {
+}
+.user-icon.float-right {
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+    color: lightgray;
+    margin: 12px;
+}
+.user-icon.float-right:not(:last-child) {
+    border-left: solid lightgray 1px;
 }
